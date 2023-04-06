@@ -1,31 +1,23 @@
-tmux-net
-===========
+# tmux-network
 
-This is a mini plugin for [TPM](https://github.com/tmux-plugins/tpm).
+This plugin displays the current public and private IP addresses.
 
-This plugin just display current IP address. Only do it.
+## Getting Started
 
-## Usage
-
-Add `#{net_ip}` format string to your existing status-right tmux option.
+You can use the `#{net_private_ip}` or the `${net_public_ip}` variables in your existing status line.
 
 ```shell
-set-option -g status-right '#{net_ip}'
+set-option -g status-right '#{net_private_ip} #{net_public_ip}'
 ```
 
-## Install
+## Installation
 
-You can install the plugin via tpm by adding the following line in your
-`.tmux.conf` file:
+This is a plugin for [tmux plugin manager](https://github.com/tmux-plugins/tpm). You can install it by adding the following line in your tmux config.
 
 ```shell
-set -g @plugin 'svett/tmux-net'
+set -g @plugin 'tmux-extensions/tmux-network'
 ```
 
-[Detailed Installation Guidelines](https://github.com/tmux-plugins/tpm#installation)
+## License
 
-## LICENSE
-
-[MIT](https://github.com/svett/tmux-ip/blob/master/LICENSE.md)
-
-
+[MIT](./LICENSE)
